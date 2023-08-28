@@ -11,11 +11,15 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "plugins": [
+        {
+          "name": "fawryConfigPlugin",
+          "config": "./fawryConfigPlugin.js"
+        }
+      ]
     },
     "android": {
       "adaptiveIcon": {
