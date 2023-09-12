@@ -11,24 +11,29 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "plugins": [
-        {
-          "name": "fawryConfigPlugin",
-          "config": "./fawryConfigPlugin.js"
-        }
-      ]
+
+      "bundleIdentifier": "com.anonymous.ReactNativeExpo"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "config": {
+
+      },
+      "package": "com.anonymous.ReactNativeExpo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-build-properties"
+    ]
   }
 }
