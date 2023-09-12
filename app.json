@@ -1,5 +1,7 @@
 {
   "expo": {
+    
+    "jsEngine": "jsc",
     "name": "ReactNative-Expo",
     "slug": "ReactNative-Expo",
     "version": "1.0.0",
@@ -12,14 +14,19 @@
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true,
-      "plugins": [
+    "plugins": [
+      [
+        "expo-build-properties",
         {
-          "name": "fawryConfigPlugin",
-          "config": "./fawryConfigPlugin.js"
+          "ios": {
+            "flipper": false,
+            "useFrameworks" : "dynamic"
+          }
         }
       ]
+    ],
+    "ios": {
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
